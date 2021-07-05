@@ -1,6 +1,204 @@
+/* Page Styles */ 
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 0.8rem;
+}
 
+body {
+    font: 400 100%/1.5 'Merriweather', serif;
+    background-color: white;
+    hyphens: auto;
+}
+
+h1 {
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(46, 57, 77);
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.intro > h2 {
+    margin-top: 20px;
+    margin-bottom: 7.5px;
+}
+
+.intro > p {
+    margin-top: 0px;
+    color: #aaa;
+}
+
+.intro {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+main {
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.hr1 {
+    height: 2px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 1.5px;
+}
+
+.hr2 {
+    height: 0..25px;
+    background-color: black;
+    margin-top: 1.5px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;    ;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.contact {
+    color: rgb(170, 170, 170);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 7.5px;
+}
+
+label {
+    color: rgb(70, 70, 90);
+    min-width: fit-content;
+    justify-content: center;
+    align-self: center;
+}
+
+.contact>label {
+    display: block;
+}
+
+input, select {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    border: none;
+    height: 4rem;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: rgb(170, 170, 170);
+    padding-left: 10px;
+}
+
+input[placeholder="Required"] {
+    text-align: right;
+    padding-right: 20px;
+}
+
+input:focus, select:focus {
+    border: 3px inset rgb(46, 57, 77);
+    background-color: #f1efdb;
+}
+
+textarea::placeholder {
+    padding-top: 8px;
+}
+
+option[disabled] {
+    color: rgb(170, 170, 170)
+}
+
+#zip {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.hr3 {
+    height: 0.5px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 7.5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #2ebfac;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+}
 
 /* Media Queries */
 @media screen and (min-width: 768px) /* Desktop */ {
+    
+    main {
+        width: auto;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .container  {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        min-width: 150px;
+    }
+
+    .container_zip {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #zip {
+        margin-left: 0px;
+        width: 160px;
+    }
 
 }
