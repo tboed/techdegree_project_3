@@ -80,6 +80,12 @@ legend {
     display: block;
     margin-top: 10px;
     margin-bottom: 7.5px;
+    background-color: blanchedalmond;
+}
+
+.newsletter {
+    background-color: cornsilk;
+    padding-top: 5px;
 }
 
 label {
@@ -129,8 +135,7 @@ option[disabled] {
 }
 
 #zip {
-    width: 160px;
-    margin-left: 10px;
+    width: 50%;
 }
 
 .hr3 {
@@ -198,7 +203,7 @@ footer {
 
     #zip {
         margin-left: 0px;
-        width: 160px;
+        width: 25%;
     }
 
 }
