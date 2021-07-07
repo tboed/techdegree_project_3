@@ -107,6 +107,7 @@ input, select {
     border-radius: 5px;
     margin-top: 12px;
     margin-bottom: 15px;
+    transition: border 1s linear;
 }
 
 input::placeholder, select::placeholder, textarea::placeholder {
@@ -121,9 +122,13 @@ input[placeholder="Required"] {
     padding-right: 20px;
 }
 
-input:focus, select:focus {
+input:focus, select:focus textarea:focus {
     border: 3px inset rgb(46, 57, 77);
     background-color: #f1efdb;
+}
+
+textarea {
+    transition: border 1s linear;
 }
 
 textarea::placeholder {
